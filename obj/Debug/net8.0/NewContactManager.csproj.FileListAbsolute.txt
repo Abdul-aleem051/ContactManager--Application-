@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\NewContactManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\NewContactManager.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\NewContactManager.AssemblyInfo.cs
+C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\NewContactManager.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\NewContactManager.sourcelink.json
+C:\Users\User\Desktop\MGQS\NewContactManager\bin\Debug\net8.0\NewContactManager.exe
+C:\Users\User\Desktop\MGQS\NewContactManager\bin\Debug\net8.0\NewContactManager.deps.json
+C:\Users\User\Desktop\MGQS\NewContactManager\bin\Debug\net8.0\NewContactManager.runtimeconfig.json
+C:\Users\User\Desktop\MGQS\NewContactManager\bin\Debug\net8.0\NewContactManager.dll
+C:\Users\User\Desktop\MGQS\NewContactManager\bin\Debug\net8.0\NewContactManager.pdb
+C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\NewContactManager.dll
+C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\refint\NewContactManager.dll
+C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\NewContactManager.pdb
+C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\NewContactManager.genruntimeconfig.cache
+C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\ref\NewContactManager.dll

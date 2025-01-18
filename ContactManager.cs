@@ -1,9 +1,8 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
-
 namespace NewContactManager
 {
     public class ContactManager : IContactManager
@@ -21,24 +20,28 @@ namespace NewContactManager
         {
             try
             {
-                if (ValidatePhoneNumber(phoneNumber))
+                
+                if (!ValidatePhoneNumber(phoneNumber))
                 {
                     Console.WriteLine("Invalid phone number. It should be exactly 11 digits and contain no special characters.");
                     return;
                 }
 
-                if (ValidateContactName(name))
+                
+                if (!ValidateContactName(name))
                 {
                     Console.WriteLine("Invalid name. It should be at least 3 characters long and contain no special characters (except spaces and @).");
                     return;
                 }
 
+                
                 if (IsContactExist(phoneNumber))
                 {
                     Console.WriteLine($"Contact with {phoneNumber} already exists!");
                     return;
                 }
 
+            
                 var contact = new Contact
                 {
                     Id = _nextId++,
@@ -62,7 +65,6 @@ namespace NewContactManager
             try
             {
                 var contact = Contacts.Find(x => x.Id == id);
-
                 if (contact is null)
                 {
                     Console.WriteLine("Contact you are trying to delete does not exist!");
@@ -70,11 +72,7 @@ namespace NewContactManager
                 }
 
                 bool isRemoved = Contacts.Remove(contact);
-
-                string result = isRemoved
-                    ? "Contact removed successfully!"
-                    : "Unable to remove contact!";
-
+                string result = isRemoved ? "Contact removed successfully!" : "Unable to remove contact!";
                 Console.WriteLine(result);
             }
             catch (Exception ex)
@@ -111,7 +109,6 @@ namespace NewContactManager
             try
             {
                 var contact = Contacts.Find(x => x.Id == id);
-
                 if (contact is null)
                 {
                     Console.WriteLine("Contact does not exist!");
@@ -127,7 +124,6 @@ namespace NewContactManager
                 Work Number: {contact.WorkNumber ?? "N/A"}
                 Contact Type: {contact.ContactType?.ToString() ?? "N/A"}
                 """;
-
                 Console.WriteLine(result);
             }
             catch (Exception ex)
@@ -141,7 +137,6 @@ namespace NewContactManager
             try
             {
                 var contact = Contacts.Find(x => x.MobileNumber == mobileNumber);
-
                 if (contact is null)
                 {
                     Console.WriteLine("Contact does not exist!");
@@ -157,7 +152,6 @@ namespace NewContactManager
                 Work Number: {contact.WorkNumber ?? "N/A"}
                 Contact Type: {contact.ContactType?.ToString() ?? "N/A"}
                 """;
-
                 Console.WriteLine(result);
             }
             catch (Exception ex)
@@ -170,20 +164,21 @@ namespace NewContactManager
         {
             try
             {
-                if (ValidatePhoneNumber(mobileNumber))
+                
+                if (!ValidatePhoneNumber(mobileNumber))
                 {
                     Console.WriteLine("Invalid phone number. It should be exactly 11 digits and contain no special characters.");
                     return;
                 }
 
-                if (ValidateContactName(name))
+                
+                if (!ValidateContactName(name))
                 {
                     Console.WriteLine("Invalid name. It should be at least 3 characters long and contain no special characters (except spaces and @).");
                     return;
                 }
 
                 var contact = Contacts.Find(x => x.Id == id);
-
                 if (contact is null)
                 {
                     Console.WriteLine("Contact you are trying to edit does not exist!");
@@ -218,12 +213,14 @@ namespace NewContactManager
 
         private bool ValidatePhoneNumber(string phoneNumber)
         {
-            return phoneNumber.Length == 11 && Regex.IsMatch(phoneNumber, @"^\/%$");
+            
+            return phoneNumber.Length == 11 && phoneNumber.All(char.IsDigit);
         }
 
         private bool ValidateContactName(string name)
         {
-            return name.Length >= 3 && Regex.IsMatch(name, @"%*&#$");
+            
+            return name.Length >= 3 && Regex.IsMatch(name, @"^[a-zA-Z\s@]+$");
         }
     }
 }

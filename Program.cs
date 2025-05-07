@@ -1,5 +1,4 @@
 ﻿using NewContactManager;
-
 Menu menu = new();
 
 menu.ContactMenu();

@@ -13,3 +13,7 @@ C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\refint\NewContactM
 C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\NewContactManager.pdb
 C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\NewContactManager.genruntimeconfig.cache
 C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\ref\NewContactManager.dll
+C:\Users\User\Desktop\MGQS\NewContactManager\bin\Debug\net8.0\ConsoleTables.dll
+C:\Users\User\Desktop\MGQS\NewContactManager\bin\Debug\net8.0\Wcwidth.dll
+C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\NewContactManager.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\MGQS\NewContactManager\obj\Debug\net8.0\NewConta.8BA00A52.Up2Date
